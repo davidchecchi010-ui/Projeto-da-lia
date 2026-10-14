@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title">
+  <title id="title">Lanche da tarde com pão, maçã e suco</title>
+  <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f8e7c9"/><stop offset="1" stop-color="#d7a66d"/></linearGradient></defs>
+  <rect width="900" height="600" fill="url(#bg)"/><path d="M0 435Q220 390 460 445T900 415V600H0Z" fill="#8c6746" opacity=".5"/>
+  <ellipse cx="420" cy="405" rx="300" ry="95" fill="#5a402b" opacity=".22"/><ellipse cx="420" cy="380" rx="300" ry="95" fill="#fffdf5"/>
+  <path d="M205 370q20-125 165-125t165 125z" fill="#d38e43" stroke="#aa672d" stroke-width="10"/><path d="M224 350q120-38 292 0" fill="none" stroke="#f0be70" stroke-width="18" stroke-linecap="round"/>
+  <path d="M605 285q25-45 60-8 48-18 56 33 22 106-67 135-91-30-65-133z" fill="#d84935"/><path d="M652 275q0-40 37-54" fill="none" stroke="#5a7637" stroke-width="13" stroke-linecap="round"/><path d="M680 225q35-12 52 13-32 18-52-13" fill="#78a64d"/>
+  <path d="M715 145h100v155a50 50 0 0 1-100 0z" fill="#f4d86a" stroke="#fff8da" stroke-width="10"/><path d="M730 170h70M730 200h70" stroke="#fff1a9" stroke-width="9" opacity=".8"/><path d="M765 145l35-70" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+</svg>

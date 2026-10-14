@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title">
+  <title id="title">Almoço com arroz, feijão, salada e frango grelhado</title>
+  <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#d6e6cc"/><stop offset="1" stop-color="#718d62"/></linearGradient><radialGradient id="plate"><stop stop-color="#fff"/><stop offset="1" stop-color="#e8e9df"/></radialGradient></defs>
+  <rect width="900" height="600" fill="url(#bg)"/><path d="M0 430Q260 370 520 450T900 410V600H0Z" fill="#765b3e" opacity=".45"/>
+  <ellipse cx="450" cy="350" rx="315" ry="195" fill="#263d27" opacity=".2"/><ellipse cx="450" cy="330" rx="315" ry="195" fill="url(#plate)"/>
+  <ellipse cx="340" cy="300" rx="105" ry="83" fill="#fffdf3"/><g fill="#f2e7c5"><ellipse cx="295" cy="280" rx="28" ry="17"/><ellipse cx="345" cy="310" rx="32" ry="19"/><ellipse cx="380" cy="275" rx="25" ry="15"/><ellipse cx="320" cy="335" rx="27" ry="16"/></g>
+  <ellipse cx="545" cy="300" rx="92" ry="80" fill="#8b482d"/><g fill="#b15b36"><circle cx="500" cy="280" r="20"/><circle cx="550" cy="320" r="25"/><circle cx="590" cy="275" r="18"/></g>
+  <g fill="#69a34f"><path d="M585 390q-28-74 23-98 38 52-23 98"/><path d="M596 390q28-68 84-55-26 61-84 55"/><path d="M574 390q-70-42-48-88 62 18 48 88"/></g>
+  <g fill="#e15139"><circle cx="635" cy="325" r="24"/><circle cx="660" cy="359" r="20"/></g>
+</svg>

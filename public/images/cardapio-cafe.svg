@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title">
+  <title id="title">Café da manhã com pão de queijo, frutas e café</title>
+  <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f5dfb7"/><stop offset="1" stop-color="#c88d55"/></linearGradient><radialGradient id="plate"><stop stop-color="#fffdf7"/><stop offset="1" stop-color="#e7e2d4"/></radialGradient></defs>
+  <rect width="900" height="600" fill="url(#bg)"/><path d="M0 430Q250 360 490 450T900 410V600H0Z" fill="#876443" opacity=".48"/>
+  <ellipse cx="460" cy="350" rx="300" ry="190" fill="#684a32" opacity=".24"/><ellipse cx="450" cy="330" rx="300" ry="190" fill="url(#plate)"/>
+  <g fill="#d79545" stroke="#b96e2e" stroke-width="8"><circle cx="310" cy="300" r="62"/><circle cx="440" cy="270" r="62"/><circle cx="555" cy="320" r="62"/><circle cx="400" cy="400" r="62"/></g>
+  <g fill="#f4c76d" opacity=".8"><circle cx="290" cy="280" r="13"/><circle cx="423" cy="250" r="13"/><circle cx="537" cy="300" r="13"/><circle cx="380" cy="380" r="13"/></g>
+  <path d="M620 155h100v130a50 50 0 0 1-100 0z" fill="#fffaf0" stroke="#9d623b" stroke-width="12"/><path d="M720 185h30a36 36 0 0 1 0 72h-30" fill="none" stroke="#9d623b" stroke-width="12"/><ellipse cx="670" cy="158" rx="50" ry="14" fill="#573923"/>
+  <g fill="#7caa50"><path d="M245 390q-45-65-90-35 27 47 90 35"/><path d="M245 390q12-67 70-62-4 55-70 62"/></g>
+</svg>
