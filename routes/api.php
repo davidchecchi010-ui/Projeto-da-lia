@@ -4,6 +4,10 @@ use App\Http\Controllers\UsuarioController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\FuncionarioController;
+
+
+
 
 Route::get('/user', function (Request $request) {
     return $request->user();
@@ -16,5 +20,9 @@ Route::get('/listar_usuarios_simples', [UsuarioController::class, 'listar_usuari
 Route::put('/alterar_usuarios', [UsuarioController::class, 'alterar_usuario']);
 Route::delete('/deletar_usuario', [UsuarioController::class, 'deletar_usuario']);
 
+Route ::post('salvar_funcionario', [FuncionarioController::class, 'salvar_funcionario']);
+Route::get('ver_funcionario', [FuncionarioController::class,'']);
+Route::get('listar_funcionarios', [FuncionarioController::class, 'listar_funcionarios']);
+Route::get('alterar_usuario', [FuncionarioController::class,'']);
 
 

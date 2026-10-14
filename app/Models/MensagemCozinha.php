@@ -6,5 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class MensagemCozinha extends Model
 {
-    protected $fillable = ['nome', 'email', 'assunto', 'mensagem', 'status'];
+    protected $table = "mensagem_cozinhas";
+    protected $fillable = [
+    'nome', 
+    'email',
+    'assunto',
+    'mensagem', 
+'status'];
 }
