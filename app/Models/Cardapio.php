@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Cardapio extends Model
 {
@@ -23,8 +23,8 @@ class Cardapio extends Model
         ];
     }
 
-    public function produtos(): BelongsToMany
+    public function produtos()
     {
-        return $this->belongsToMany(Produto::class, 'item_cardapios', 'cardapio_id', 'produto_id');
+        return $this->belongsTo(Produto::class, 'item_cardapios', 'cardapio_id', 'produto_id');
     }
 }
