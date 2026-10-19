@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('nome', 120);
             $table->string('email')->nullable();
-            $table->string('assunto', 40);
-            $table->text('mensagem');
-            $table->string('status', 20)->default('pendente');
+            $table->string('assunto', 100);
+            $table->text('mensagem',);
+            $table->string('status', 100)->default('pendente');
             $table->timestamps();
         });
     }

@@ -109,11 +109,11 @@ class UsuarioController extends Controller
             $usuario->data_nascimento = $request->data_nascimento;
             $usuario->save();
 
-            return response()->json(['message' => 'Usuário cadastrado com sucesso', 'erro' => 'n'], 200);
+            return response()->json(['message' => 'Usuário alterado com sucesso', 'erro' => 'n'], 200);
 
 
         } catch (\Throwable $th) {
-            return response()->json(['message' => 'Erro ao cadastrar usuário', 'erro' => 's', 'msg_erro' => $th->getMessage()], 200);
+            return response()->json(['message' => 'Erro ao alterar usuário', 'erro' => 's', 'msg_erro' => $th->getMessage()], 200);
 
         }
     }

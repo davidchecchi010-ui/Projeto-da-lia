@@ -153,7 +153,7 @@
                 <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Assistente do refeitório</p>
                 <h1 id="page-title">Oi, eu sou a Lia.</h1>
                 <p class="intro-copy">Posso ajudar você a encontrar o cardápio, falar com a cozinha ou acessar uma solicitação de troca.</p>
-                <p class="intro-note">Escolha um atalho ou escreva sua dúvida na conversa.</p>
+                <p class="intro-note">Escolha um atalho ou escreva sua dúvida na conversa. Se preferir, fale diretamente com as cozinheiras.</p>
             </section>
 
             <section class="chat-card" aria-label="Conversa com a Lia">
@@ -177,8 +177,8 @@
                     <p class="suggestions-label">Atalhos rápidos</p>
                     <div class="suggestions">
                         <a class="suggestion" href="{{ route('cardapios.index') }}">Ver cardápios</a>
-                        <a class="suggestion" href="{{ route('troca_almoco') }}">Quero trocar algo do almoço</a>
-                        <a class="suggestion" href="{{ route('contato') }}">Falar com a cozinha</a>
+                        <a class="suggestion" href="{{ route('contato.cozinha') }}">Quero trocar um alimento com as cozinheiras</a>
+                        <a class="suggestion" href="{{ route('contato.cozinha') }}">Não consegui falar com a Lia</a>
                     </div>
                 </div>
 
@@ -228,11 +228,11 @@
             }
 
             if (normalizedMessage.includes('troca') || normalizedMessage.includes('substitu')) {
-                return 'Para pedir uma troca, acesse “Solicitação de troca” no rodapé desta página.';
+                return 'Para pedir a troca de um alimento, use o atalho “Quero trocar um alimento com as cozinheiras” nesta conversa.';
             }
 
             if (normalizedMessage.includes('contato') || normalizedMessage.includes('cozinha') || normalizedMessage.includes('falar')) {
-                return 'A página Contato tem os canais para falar com a cozinha. Acesse pelo menu no topo.';
+                return 'Use o atalho “Não consegui falar com a Lia” nesta conversa para enviar sua mensagem às cozinheiras.';
             }
 
             if (normalizedMessage.includes('obrigad')) {

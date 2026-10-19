@@ -63,4 +63,21 @@ class MensagemCozinhaController extends Controller
             return response()->json(['message' => 'Erro ao deletar mensagem', 'erro' => 's', 'msg_erro' => $th->getMessage()], 200);
         }
     }
+
+    public function ver_mensagemCozinha(Request $request)
+    {
+        $request->validate([
+            'id' => 'required|integer',
+        ]);
+
+        try {
+            $mensagem = MensagemCozinha::find($request->input('id'));
+            if (!$mensagem) {
+                return response()->json(['message' => 'Mensagem não encontrada!'], 404);
+            }
+            return response()->json(['mensagem' => $mensagem], 200);
+        } catch (\Throwable $th) {
+            return response()->json(['message' => 'Erro ao buscar mensagem', 'erro' => 's', 'msg_erro' => $th->getMessage()], 200);
+        }
+    }
 }

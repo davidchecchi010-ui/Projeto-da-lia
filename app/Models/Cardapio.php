@@ -2,26 +2,20 @@
 
 namespace App\Models;
 
+use Carbon\Traits\Timestamp;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Cardapio extends Model
 {
     protected $table = 'cardapio';
-
+    public $timestamps = false;
     protected $fillable = [
         'data',
         'departamento',
         'data_admissao',
     ];
 
-    protected function casts(): array
-    {
-        return [
-            'data' => 'date',
-            'data_admissao' => 'date',
-        ];
-    }
 
     public function produtos()
     {

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use App\Models\Funcionario;
 
 class FuncionarioController extends Controller
 {
@@ -15,14 +16,16 @@ class FuncionarioController extends Controller
         $request ->validate([
             'nome' => 'required',
             'email' => 'required|email',
-            'senha' => 'required|min:6',
+            'telefone' => 'required',
+            'cargo' => 'required',
         ]);
 
         try{
             $funcionario = new Funcionario();
             $funcionario->nome = $request->nome;
             $funcionario->email = $request->email;
-            $funcionario->senha = Hash::make($request->senha);
+            $funcionario->telefone = $request->telefone;
+            $funcionario->cargo = $request->cargo;
             $funcionario->save();
 
             return response()->json(['message' => 'Funcionário cadastrado com sucesso!'], 200);
@@ -43,12 +46,13 @@ class FuncionarioController extends Controller
         }
     }
 
-    public function alterar_usuario(Request $request){
+    public function alterar_funcionario(Request $request){
         $request->validate([
             'id' => 'required|integer',
             'nome' => 'required|string|max:255',
             'email' => 'required|string|email|max:255',
-            'senha' => 'nullable|string|min:8',
+            'telefone' => 'required|string|max:20',
+            'cargo' => 'required|string|max:100',
         ]);
 
         try {
@@ -59,9 +63,8 @@ class FuncionarioController extends Controller
 
             $funcionario->nome = $request->nome;
             $funcionario->email = $request->email;
-            if ($request->senha) {
-                $funcionario->senha = Hash::make($request->senha);
-            }
+            $funcionario->telefone = $request->telefone;
+            $funcionario->cargo = $request->cargo;
             $funcionario->save();
 
             return response()->json(['message' => 'Funcionário atualizado com sucesso', 'erro' => 'n'], 200);
