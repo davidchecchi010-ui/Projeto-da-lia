@@ -47,12 +47,12 @@ class CardapioController extends Controller
         return response()->json(['cardapios' => $cardapios, 'erro' => 'n'], 200);
      }
 
-     public function alterar_caradapio(Request $request){
+     public function alterar_cardapio(Request $request){
         $request->validate([
             'id' => 'required|integer',
             'data' => 'required|string|date_format:Y-m-d',
             'departamento' => 'required|string|max:255',
-            'data_admissão' => 'required|string|date_format:Y-m-d',
+            'data_admissao' => 'required|string|date_format:Y-m-d',
         ]);
 
         try {
@@ -62,7 +62,7 @@ class CardapioController extends Controller
             }
             $cardapio->data = $request->data;
             $cardapio->departamento = $request->departamento;
-            $cardapio->data_admissão = $request->data_admissão;
+            $cardapio->data_admissao = $request->data_admissao;
             $cardapio->save();
 
             return response()->json(['message' => 'Cardápio alterado com sucesso!', 'erro' => 'n'], 200);

@@ -35,4 +35,5 @@ Route::middleware('throttle:5,1')->group(function () {
     Route::post('/contato', [ContatoController::class, 'enviar'])->name('contato.enviar');
     Route::post('/falar-com-a-cozinha', [ContatoController::class, 'enviar'])->name('contato.cozinha.enviar');
     Route::post('/solicitacao-de-troca', [SolicitacaoController::class, 'store'])->name('solicitacao_de_troca.store');
+    Route::get('/login', [LoginController::class, 'mostrarlogin'])->name('login');
 });

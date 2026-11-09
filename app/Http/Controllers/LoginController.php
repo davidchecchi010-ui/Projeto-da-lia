@@ -6,8 +6,8 @@ use Illuminate\Contracts\View\View;
 
 class LoginController extends Controller
 {
-    public function index(): View
+    public function mostrarlogin(): View
     {
-        return view('login');
+        return view('login_david');
     }
 }
